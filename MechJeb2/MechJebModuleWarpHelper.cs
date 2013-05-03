@@ -11,7 +11,7 @@ namespace MuMech
         public enum WarpTarget { Periapsis, Apoapsis, Node, SoI }
         static string[] warpTargetStrings = new string[] { "periapsis", "apoapsis", "maneuver node", "SoI transition" };
         static readonly int numWarpTargets = Enum.GetNames(typeof(WarpTarget)).Length;
-        public WarpTarget warpTarget = WarpTarget.Periapsis;
+        public WarpTarget warpTarget = WarpTarget.Node;
 
         public EditableTime leadTime = 0;
 
